@@ -1,0 +1,323 @@
+.wpm-options-one-third {
+	width: 28%;
+	float: left;
+	padding: 5px;
+}
+
+.wpm-color-picker {
+	clear: both;
+	width: 200px;
+	padding: 5px;
+
+	label {
+		float: left;
+	}
+
+	input {
+		float: right;
+	}
+}
+
+.wpm-logos {
+	text-align: center;
+}
+
+.widget-wrap {
+	.wpm-calendar-legend {
+		.wpm-widget-legend-title {
+			padding: 5px;
+			width: 50%;
+		}
+	}
+}
+
+.wpm-legend-title {
+	background-color: #646464;
+}
+
+.wpm-calendar-legend {
+	.wpm-legend-item {
+		width: 25%;
+		float: left;
+		text-align: center;
+		margin: 5px;
+		border-radius: 3px;
+	}
+}
+
+.credit-line {
+	font-size: 8px;
+	font-size: 0.5714rem;
+	text-transform: capitalize;
+
+}
+
+.wp-meetup-calendar {
+	.calendar-month {
+		td {
+			width: 12%;
+			border-top: none;
+			border-bottom: 1px solid;
+			vertical-align: top;
+		}
+
+		.calendar-week {
+			.wpm-day {
+				position: relative;
+				.widget-calendar-entry {
+					position: absolute;
+				}
+
+				.wpm-date {
+					position: relative;
+					.wpm-number-display {
+						position: relative;
+					}
+
+					.wpm-event-list {
+						margin: 0;
+
+						.wpm-single {
+							border-radius: 5px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.credit-line p {
+	text-align: right;
+}
+
+.wp-meetup-calendar {
+	.calendar-week {
+		.wp-meetup-table-data {
+			a {
+				color: #123123;
+			}
+		}
+	}
+}
+
+.clear {
+	clear: both;
+	float: none;
+}
+
+.wpm-event-list {
+	margin: auto;
+
+	.wpm-single {
+		margin: 1px;
+		padding: 5px 8px;
+	}
+}
+
+// Post Content
+
+.meetup-backlink {
+	background-color: #cdcdcd;
+	width: 300px;
+	border-radius: 5px;
+	margin: 5px;
+	margin-bottom: 15px;
+	margin-right: 15px;
+	float: left;
+
+	div {
+		width: 90%;
+		padding: 15px;
+	}
+
+	h3 {
+		margin: 12px 0;
+	}
+
+	p {
+		margin: auto 0;
+	}
+
+	.button-wrapper {
+		text-align: center;
+		margin: auto;
+		.button {
+			text-align: center;
+			width: 80%;
+			border-radius: 5px;
+			background-color: #c71f24;
+			color: white;
+			padding: 8px 12px;
+			text-decoration: none;
+			text-transform: capitalize;
+
+			&:hover {
+				background-color: darken(#c71f24, 10%);
+			}
+		}
+	}
+
+	.meetup-backlink-venue {
+		.meetup-backlink-map {
+			width: 100%;
+
+			a {
+				width: 100%;
+			}
+		}
+
+	}
+}
+
+.entry-content {
+	.credit-line {
+		text-align: right;
+	}
+}
+
+// Settings Pages
+
+.wp-meetup-options-page {
+	.one {
+		width: 100%;
+		@extend .clear;
+	}
+
+	.one-half {
+		width: 48%;
+		float: left;
+		padding: 5px;
+	}
+
+	.one-third {
+		width: 32%;
+		float: left;
+		padding: 5px;
+	}
+
+	.two-thirds {
+		width: 65%;
+		float: left;
+		padding: 5px;
+	}
+
+	.clear {
+		clear: both;
+		float: none;
+	}
+
+	.logo-wrap {
+		a {
+			float: left;
+			margin: 5px;
+		}
+
+		h3 {
+			float: left;
+			margin: 5px;
+		}
+	}
+
+	.meetup-options {
+		padding: 5px;
+
+		.limited-width {
+			max-width: 100px;
+		}
+	}
+}
+
+.developer-options {
+	background-color: rgba(255, 255, 255, 0.3);
+	padding: 20px;
+	border: solid 1px rgb(200, 200, 200);
+	border-radius: 10px;
+}
+
+
+// Widgets
+
+
+.meetup-event-list-month {
+	border-bottom: 2px solid black;
+	margin-bottom: 3px;
+
+	h3 {
+		margin: 0px;
+	}
+}
+
+.meetup-widget-event-list {
+	.wpm-date-display {
+		width: 20%;
+		text-align: center;
+		border-radius: 3px;
+		display: inline;
+		margin: 5px auto;
+		padding: 2px;
+		float: left;
+
+	}
+
+	.widget-meetup-event-list-day {
+		a {
+			.wpm-single {
+				width: 70%;
+				margin: 5px;
+				padding: 3px auto;
+				text-transform: capitalize;
+				float: left;
+			}
+		}
+	}
+}
+
+
+.widget-meetup-event-list-day {
+	margin-bottom: 8px;
+
+	.widget-month-display {
+		display: inline;
+	}
+
+	.wpm-number-display {
+		display: inline;
+	}
+}
+
+.widget-area {
+	.widget {
+		.credit-line {
+			p {
+				font-size: 8px;
+				text-transform: capitalize;
+			}
+		}
+	}
+}
+
+.one-half {
+	width: 50%;
+	float: left;
+}
+
+.two-thirds {
+	width: 66.666%;
+	float: left;
+}
+
+.one-third {
+	width: 33.333%;
+	float: left;
+}
+
+.one-fourth {
+	width: 25%;
+	float: left;
+}
+
+.three-fourths {
+	width: 75%;
+	float: left;
+}

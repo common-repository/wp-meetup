@@ -1,0 +1,204 @@
+// Version 1.1
+$teal: #06C69F;
+$dark-teal: #049477;
+
+$tab-color-bg: #fff;
+$tab-color-bg-hover: $dark-teal; //#049477;
+$tab-color-bg-active: $teal;
+$tab-color-text: #000;
+$tab-color-text-hover: #fff;
+$tab-color-text-active: #000;
+
+
+// ----- Layout and structure
+.tabs-container {
+	overflow: hidden;
+	.tab {
+		float: left;
+		a {
+			display: block;
+		}
+	}
+}
+
+
+// ----- Colors
+.tabs-container {
+	.tab {
+		a {
+			background: $tab-color-bg;
+			color: $tab-color-text;
+			&:hover {
+				background: $tab-color-bg-hover;
+				color: $tab-color-text-hover;
+			}
+		}
+		&.active {
+			a {
+				background: $tab-color-bg-active;
+				color: $tab-color-text-active;
+                font-weight: 900;
+			}
+		}
+	}
+}
+
+
+// ----- Lengths (paddings, margins, etc)
+.tabs-container {
+	.tab {
+		a {
+			padding: 10px 15px;
+		}
+	}
+}
+
+
+// ----- Typography (font sizes, text styles, etc)
+.tabs-container {
+	.tab {
+		a {
+			text-decoration: none;
+		}
+	}
+}
+
+
+
+
+
+
+
+// misc
+.nm-postbox-container {
+	.postbox {
+		h3 {
+			cursor: pointer !important;
+		}
+	}
+}
+
+.nm-admin-page {
+	* {
+		box-sizing: border-box;
+	}
+	.content-container,
+	.sidebar-container {
+		padding: 20px;
+		float: left;
+		overflow: hidden;
+	}
+
+	.content-container {
+		width: 70%;
+		padding-left: 0;
+	}
+	.sidebar-container {
+		width: 30%;
+	}
+    .hndle {
+        background: #06c69f;
+    }
+    .handlediv {
+        color: #000;
+    }
+}
+
+.nm-support-box { // sidebar form
+	.nm-support-staff-submit {
+	    margin-top: 10px !important;
+	    margin-left: 5% !important;
+	}
+	.nm-support-staff-checkbox {
+	    float: left;
+	    width: 5%;
+	}
+	.nm-support-staff-label {
+	    float: left;
+	    width: 95%;
+	}
+}
+
+.nm-social-media-links-container {
+    padding: 10px 20px;
+}
+
+.nm-logo {
+    img {
+        width: 100%;
+    }
+}
+
+.nm-support-prompt {
+	overflow: hidden;
+	clear: both;
+	margin-top: 20px;
+	font-size: 12px;
+	&.nm-error {
+		border-left: 10px solid $dark-teal;
+		width: auto;
+		max-width: 700px;
+		color: #111;
+	}
+    .nm-support-staff-form {
+		padding: 15px;
+    }
+	.nm-support-staff-prompt-submit {
+		$shadow-height: 3px;
+		margin-top: 12px;
+		margin-bottom: $shadow-height;
+		background: $dark-teal;
+		color: #eee;
+		border: none;
+		padding: 8px 10px;
+		border-radius: 4px;
+		cursor: pointer;
+		box-shadow: 0 $shadow-height darken($dark-teal, 10%);
+		//transition: all 0.1s linear;
+		&:hover {
+			box-shadow: 0 1px darken($dark-teal, 10%);
+			margin-top: 12px + $shadow-height - 1px;
+			margin-bottom: 1px;
+		}
+	}
+    .nm-support-staff-prompt-exit {
+        float: right;
+        text-align: right;
+		padding: 5px;
+		input[type="submit"] {
+			background: none;
+			box-shadow: none;
+			border: none;
+			color: #666;
+			font-size: 14px;
+			cursor: pointer;
+			&:hover {
+				color: #333;
+			}
+		}
+    }
+}
+
+.nm-error {
+    width: 60%;
+    background: $teal;
+    border-left: solid 10px #fff;
+    color: #fff;
+    margin: 10px 10px 10px 0;
+}
+
+
+.one-half {
+    width: 50%;
+    float: left;
+}
+
+.one-fourth {
+    width: 25%;
+    float:left;
+}
+
+.three-fourths {
+    width: 75%;
+    float: left;
+}
